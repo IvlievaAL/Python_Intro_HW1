@@ -2,20 +2,19 @@
 # *Пример:*
 # 385916 -> yes
 # 123456 -> no
-def SumOfThreeDigits (i):
-    count=0
+def SumOfThreeDigits (digit):
+    i=0
     Sum=0
-    while count<3:
-        Sum=Sum+N%10^i//10^(i-1)
-        count+=1
+    while i<3:
+        Sum=Sum+N%10**digit//10**(digit-1)
+        digit-=1
+        i+=1
     return Sum
 N=int(input ("Введите шестизначное число (номер билета)"))
-i=6
-SumOfFirstThreeDigits=SumOfThreeDigits(i)
-print(SumOfThreeDigits(i))
-i=3
-SumOfLastThreeDigits=SumOfThreeDigits(i)
-print(SumOfThreeDigits(i))
+digit=6
+SumOfFirstThreeDigits=SumOfThreeDigits(digit)
+digit=3
+SumOfLastThreeDigits=SumOfThreeDigits(digit)
 if SumOfFirstThreeDigits==SumOfLastThreeDigits:
     print ("yes")
 else:
