@@ -12,8 +12,10 @@ def SumOfThreeDigits (i):
 N=int(input ("Введите шестизначное число (номер билета)"))
 i=6
 SumOfFirstThreeDigits=SumOfThreeDigits(i)
+print(SumOfThreeDigits(i))
 i=3
 SumOfLastThreeDigits=SumOfThreeDigits(i)
+print(SumOfThreeDigits(i))
 if SumOfFirstThreeDigits==SumOfLastThreeDigits:
     print ("yes")
 else:
